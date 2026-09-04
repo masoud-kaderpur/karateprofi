@@ -1,0 +1,78 @@
+---
+// src/pages/impressum.astro
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Impressum">
+
+  <Header />
+
+  <main class="py-12 sm:py-20 px-4 sm:px-6 max-w-4xl mx-auto">
+
+    <div class="mb-10 text-center">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+        Impressum
+      </h1>
+    </div>
+
+    <div class="border-sky-100 rounded-3xl p-6 sm:p-10 shadow-sm space-y-8 text-slate-700 text-sm sm:text-base leading-relaxed">
+
+      <div>
+        <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+          Verein & Organisation
+        </h2>
+        <p class="font-semibold text-slate-900">KARATEPROFI – Zweigverein des Akademischen Sportklubs (ASC) der Universität Wien</p>
+        <p class="mt-2">
+          <strong>Rechtsform:</strong> Gemeinnütziger Verein<br>
+          <strong>Zweigverein "KARATEPROFI":</strong> ZVR-Zahl: 634784235<br>
+          <strong>Dachverein "Akademischer Sportclub der Universität Wien":</strong> ZVR-Zahl: 834180227<br>
+          <strong>Sitz des Dachvereins:</strong> Wien XV, Auf der Schmelz 6
+        </p>
+      </div>
+
+      <hr class="border-slate-100" />
+
+      <div>
+        <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+          Vertretungsbefugte Organe
+        </h2>
+        <ul class="space-y-3">
+          <li>
+            <strong>Obmann:</strong> Dr. Christian Schättle<br>
+            <span class="text-xs text-slate-500">Staatl. Trainer für Karate, Akadem. Hort- und Freizeitpädagoge, 4. Dan Shotokan, 2. Dan Goju Ryu</span>
+          </li>
+          <li>
+            <strong>Obmannstellvertreter:</strong> Mag. Kurt Grabenwöger<br>
+            <span class="text-xs text-slate-500">1. Dan Shotokan, staatl. Lehrwart</span>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="border-slate-100" />
+
+      <div>
+        <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+          Kontakt
+        </h2>
+        <p>
+          <strong>E-Mail:</strong> <a href="mailto:info@karateprofi.at" class="text-sky-600 hover:underline font-medium">info@karateprofi.at</a><br>
+          <strong>Telefon:</strong> <a href="tel:+4369911331518" class="text-sky-600 hover:underline font-medium">+43 (0) 699 1133 1518</a>
+        </p>
+      </div>
+
+      <hr class="border-slate-100" />
+
+      <div>
+        <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+          Bankverbindung
+        </h2>
+        <div><strong>Bank:</strong> Sparda-Bank Austria Süd eGen</div>
+        <div><strong>IBAN:</strong> AT65 4666 0100 0001 2185</div>
+        <div><strong>BIC:</strong> SVIEAT21XXX</div>
+        <div><strong>Kontoinhaber:</strong> Karateprofi</div>
+      </div>
+
+    </div>
+  </main>
+</Layout>
