@@ -1,16 +1,14 @@
 ---
-// src/pages/ueber-uns.astro
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 ---
 
-<Layout title="Über uns & Trainer | KARATEPROFI Wien-Favoriten">
+<Layout title="Über uns & Trainer">
 
   <Header />
 
   <main class="overflow-hidden py-12 sm:py-20 px-4 sm:px-6 max-w-4xl mx-auto">
 
-    <!-- SEITEN-TITEL -->
     <div class="text-center max-w-2xl mx-auto mb-16">
       <span class="inline-block bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4">
         Hintergrund & Philosophie
@@ -19,11 +17,11 @@ import Header from '../components/Header.astro';
         Über uns & Unsere Werte
       </h1>
       <p class="text-slate-600 text-base sm:text-lg">
-        Wir repräsentieren das offizielle Karate in Österreich und Wien – mit Herz, Pädagogik und fachlicher Kompetenz.
+        Wir repräsentieren das offizielle Karate in Österreich und Wien. <br>
+        Mit Herz, Pädagogik und fachlicher Kompetenz.
       </p>
     </div>
 
-    <!-- DER VEREIN (ASC UNI WIEN) -->
     <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xs mb-12">
       <h2 class="text-xl font-bold text-slate-900 mb-4">Der Akademische Sportklub (ASC) der Universität Wien</h2>
       <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
@@ -34,40 +32,73 @@ import Header from '../components/Header.astro';
       </p>
     </div>
 
-    <!-- TRAINER SEKTION -->
     <div class="bg-sky-50/60 border border-sky-100 rounded-3xl p-8 sm:p-10 mb-12">
-      <h2 class="text-xl font-bold text-slate-900 mb-6">Unsere Trainer</h2>
+      <h2 class="text-2xl font-bold text-slate-900 mb-8">Unsere Trainer</h2>
 
       <div class="space-y-8">
-        <!-- Trainer 1 -->
+
+        <!-- Christian Schättle -->
         <div class="flex flex-col sm:flex-row gap-6 items-start">
           <div class="w-20 h-20 rounded-2xl bg-sky-200 flex-shrink-0 flex items-center justify-center text-sky-800 font-bold text-xl shadow-inner">
             CS
           </div>
-          <div>
-            <h3 class="font-bold text-lg text-slate-900">Dr. Christian Schättle</h3>
+          <div class="flex-1">
+            <h3 class="font-bold text-lg text-slate-900">Mag. Dr. jur. Christian Schättle</h3>
             <p class="text-xs text-sky-700 font-semibold mb-2">Obmann & Trainer</p>
             <p class="text-slate-600 text-sm leading-relaxed mb-3">
-              Staatlich geprüfter Trainer für Karate, akademischer Hort- und Freizeitpädagoge, 4. Dan Shotokan und 2. Dan Goyu Ryu. Durch seine pädagogische Ausbildung gelingt es ihm perfekt, Kinder altersgerecht zu motivieren und zu fördern.
+              Staatlich geprüfter Trainer, akadem. Hort- und Freizeitpädagoge, Universitätslehrbeauftragter für Karate seit 1996. Träger des 5. Dan Shotokan und 2. Dan Goju Ryu. Karate aktiv seit 1991. Spezialgebiet: Kata Shotokan und Sportkumite.
             </p>
           </div>
         </div>
 
-        <div class="border-t border-sky-200/60 pt-6"></div>
+        <div class="border-t border-sky-200/60 pt-2"></div>
 
-        <!-- Trainer 2 -->
+        <!-- Elisa Schnell -->
         <div class="flex flex-col sm:flex-row gap-6 items-start">
           <div class="w-20 h-20 rounded-2xl bg-sky-200 flex-shrink-0 flex items-center justify-center text-sky-800 font-bold text-xl shadow-inner">
-            KG
+            ES
           </div>
-          <div>
-            <h3 class="font-bold text-lg text-slate-900">Mag. Kurt Grabenwöger</h3>
-            <p class="text-xs text-sky-700 font-semibold mb-2">Obmannstellvertreter & Trainer</p>
+          <div class="flex-1">
+            <h3 class="font-bold text-lg text-slate-900">Elisa Schnell, BA, MA, MA</h3>
+            <p class="text-xs text-sky-700 font-semibold mb-2">Trainerteam</p>
             <p class="text-slate-600 text-sm leading-relaxed">
-              1. Dan Shotokan und staatlich geprüfter Lehrwart. Unterstützt das Trainerteam mit langjähriger Erfahrung und Fachkompetenz.
+              Staatlich geprüfte Übungsleiterin, 1. Dan Goju Ryu. Karate aktiv seit 2005.
             </p>
           </div>
         </div>
+
+        <div class="border-t border-sky-200/60 pt-2"></div>
+
+        <!-- Ahmed Ghanem -->
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <div class="w-20 h-20 rounded-2xl bg-sky-200 flex-shrink-0 flex items-center justify-center text-sky-800 font-bold text-xl shadow-inner">
+            AG
+          </div>
+          <div class="flex-1">
+            <h3 class="font-bold text-lg text-slate-900">Ahmed Ghanem</h3>
+            <p class="text-xs text-sky-700 font-semibold mb-2">Trainerteam</p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Staatlich geprüfter Übungsleiter, 1. Dan Shotokan. Karate aktiv seit 2015.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-sky-200/60 pt-2"></div>
+
+        <!-- Masoud Kaderpur -->
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <div class="w-20 h-20 rounded-2xl bg-sky-200 flex-shrink-0 flex items-center justify-center text-sky-800 font-bold text-xl shadow-inner">
+            MK
+          </div>
+          <div class="flex-1">
+            <h3 class="font-bold text-lg text-slate-900">Masoud Kaderpur</h3>
+            <p class="text-xs text-sky-700 font-semibold mb-2">Trainerteam</p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              1. Kyu Shotokan. Karate aktiv seit 2020.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
 
