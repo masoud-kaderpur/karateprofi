@@ -1,0 +1,180 @@
+---
+---
+<div id="probetraining-container" class="bg-white border border-sky-100 rounded-3xl p-6 sm:p-10 shadow-xl max-w-2xl mx-auto my-8">
+
+  <div id="step-1" class="probetraining-step">
+    <div class="inline-block bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4">
+      Schritt 1 von 3
+    </div>
+    <h3 class="text-2xl font-bold text-slate-900 mb-2">Wie alt ist dein Kind?</h3>
+    <p class="text-slate-600 text-sm mb-6">Wähle einfach die passende Altersgruppe aus:</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <button type="button" data-age="3 bis 6 Jahre (Kindergarten / Bonsai-Karate)" class="age-btn text-left p-4 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all group">
+        <div class="font-bold text-slate-900 group-hover:text-sky-700">3 bis 6 Jahre</div>
+        <div class="text-xs text-slate-500 mt-1">Kindergarten (Bonsai-Karate)</div>
+      </button>
+      <button type="button" data-age="6 bis 10 Jahre (Volksschule)" class="age-btn text-left p-4 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all group">
+        <div class="font-bold text-slate-900 group-hover:text-sky-700">6 bis 10 Jahre</div>
+        <div class="text-xs text-slate-500 mt-1">Volksschule</div>
+      </button>
+      <button type="button" data-age="10 bis 14 Jahre (Mittelschule)" class="age-btn text-left p-4 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all group">
+        <div class="font-bold text-slate-900 group-hover:text-sky-700">10 bis 14 Jahre</div>
+        <div class="text-xs text-slate-500 mt-1">Mittelschule / Jugend</div>
+      </button>
+      <button type="button" data-age="Ab 14 Jahren / Erwachsene / USI" class="age-btn text-left p-4 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 transition-all group">
+        <div class="font-bold text-slate-900 group-hover:text-sky-700">Ab 14 Jahren & Ältere</div>
+        <div class="text-xs text-slate-500 mt-1">Jugend, Erwachsene & USI</div>
+      </button>
+    </div>
+  </div>
+
+  <div id="step-2" class="probetraining-step hidden">
+    <div class="inline-block bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4">
+      Schritt 2 von 3
+    </div>
+    <h3 class="text-2xl font-bold text-slate-900 mb-2">Was ist euch besonders wichtig?</h3>
+    <p class="text-slate-600 text-sm mb-6">Damit wir uns beim Training direkt darauf einstellen können:</p>
+
+    <div class="space-y-3">
+      <label class="flex items-center gap-3 p-4 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 cursor-pointer transition-all">
+        <input type="checkbox" name="ziel" value="Mehr Selbstvertrauen" class="w-4 h-4 text-sky-600 rounded border-slate-300">
+        <span class="text-sm font-medium text-slate-800">Mehr Selbstvertrauen und Mut aufbauen</span>
+      </label>
+      <label class="flex items-center gap-3 p-4 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 cursor-pointer transition-all">
+        <input type="checkbox" name="ziel" value="Fokus & Konzentration" class="w-4 h-4 text-sky-600 rounded border-slate-300">
+        <span class="text-sm font-medium text-slate-800">Bessere Konzentration und Ausgeglichenheit</span>
+      </label>
+      <label class="flex items-center gap-3 p-4 rounded-2xl border border-slate-200 hover:border-sky-500 hover:bg-sky-50/50 cursor-pointer transition-all">
+        <input type="checkbox" name="ziel" value="Freude an Bewegung" class="w-4 h-4 text-sky-600 rounded border-slate-300">
+        <span class="text-sm font-medium text-slate-800">Einfach Spaß an der Bewegung und Sport</span>
+      </label>
+    </div>
+
+    <div class="flex justify-between mt-8">
+      <button type="button" id="back-to-1" class="text-sm text-slate-500 hover:text-slate-800 font-medium">← Zurück</button>
+      <button type="button" id="to-step-3" class="bg-sky-600 hover:bg-sky-700 text-white font-semibold px-6 py-3 rounded-xl transition-all text-sm">Weiter zum Kontakt →</button>
+    </div>
+  </div>
+
+  <div id="step-3" class="probetraining-step hidden">
+    <div class="inline-block bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4">
+      Schritt 3 von 3
+    </div>
+    <h3 class="text-2xl font-bold text-slate-900 mb-2">Wie können wir euch erreichen?</h3>
+    <p class="text-slate-600 text-sm mb-6">Wir melden uns in Kürze mit eurem Wunschtermin.</p>
+
+    <form id="contact-form" class="space-y-4" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="391d33c6-f13a-4869-87ef-322d092bb8c1">
+      <input type="hidden" id="input-altersgruppe" name="Altersgruppe" value="">
+      <input type="hidden" id="input-ziele" name="Wichtige_Ziele" value="">
+
+      <div>
+        <label for="input-name" class="block text-xs font-semibold text-slate-700 mb-1">Vorname & Name (Eltern oder Teilnehmer)</label>
+        <input  type="text" id="input-name" name="Name" required class="w-full p-3.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-sky-500" placeholder="z.B. Maria Huber">
+      </div>
+      <div>
+        <label for="input-email" class="block text-xs font-semibold text-slate-700 mb-1">E-Mail-Adresse</label>
+        <input type="email" id="input-email" name="Email" required class="w-full p-3.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-sky-500" placeholder="huber@beispiel.at">
+      </div>
+      <div>
+        <label for="input-phone" class="block text-xs font-semibold text-slate-700 mb-1">Telefonnummer (optional für kurze Rückfragen)</label>
+        <input type="tel" id="input-phone" name="Telefon" class="w-full p-3.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-sky-500" placeholder="+43 ...">
+      </div>
+
+      <div class="flex justify-between items-center mt-8">
+        <button type="button" id="back-to-2" class="text-sm text-slate-500 hover:text-slate-800 font-medium">← Zurück</button>
+        <button type="submit" id="submit-btn" class="bg-sky-600 hover:bg-sky-700 text-white font-bold px-8 py-3.5 rounded-xl transition-all shadow-md text-sm">
+          Probetraining anfragen
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="step-success" class="hidden text-center py-8">
+    <div class="w-16 h-16 bg-sky-100 text-sky-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+      ✨
+    </div>
+    <h3 class="text-2xl font-bold text-slate-900 mb-2">Vielen Dank, wir haben deine Anfrage erhalten!</h3>
+    <p class="text-slate-600 text-sm max-w-md mx-auto mb-6">
+      Trainer Dr. Christian Schättle wurde informiert und meldet sich in Kürze wegen des Probetrainings für <span id="summary-age" class="font-semibold text-slate-800"></span> bei euch.
+    </p>
+    <div class="bg-sky-50 border border-sky-100 p-4 rounded-2xl text-xs text-slate-700 max-w-sm mx-auto mb-6">
+      💡 <strong>Tipp fürs Probetraining:</strong> Einfach bequeme Sportkleidung (T-Shirt & Jogginghose) einpacken. Wir trainieren barfuß auf der Matte!
+    </div>
+    <a href="/" class="inline-block bg-slate-900 text-white font-semibold px-6 py-3 rounded-xl text-sm hover:bg-slate-800 transition-all">
+      Zurück zur Startseite
+    </a>
+  </div>
+
+</div>
+
+<script lang="js">
+  document.addEventListener('DOMContentLoaded', () => {
+    let selectedAge = '';
+
+    const steps = {
+      1: document.getElementById('step-1'),
+      2: document.getElementById('step-2'),
+      3: document.getElementById('step-3'),
+      success: document.getElementById('step-success')
+    };
+
+    function showStep(stepNum) {
+      Object.values(steps).forEach(el => el?.classList.add('hidden'));
+      if (steps[stepNum]) {
+        steps[stepNum].classList.remove('hidden');
+      }
+    }
+
+    document.querySelectorAll('.age-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        selectedAge = button.getAttribute('data-age');
+        document.getElementById('input-altersgruppe').value = selectedAge;
+        showStep(2);
+      });
+    });
+
+    document.getElementById('back-to-1')?.addEventListener('click', () => showStep(1));
+    document.getElementById('to-step-3')?.addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('input[name="ziel"]:checked');
+      const goals = Array.from(checkboxes).map(cb => cb.value).join(', ');
+      document.getElementById('input-ziele').value = goals || 'Keine Angabe';
+      showStep(3);
+    });
+    document.getElementById('back-to-2')?.addEventListener('click', () => showStep(2));
+
+    const form = document.getElementById('contact-form');
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById('submit-btn');
+      submitBtn.innerText = "Wird gesendet...";
+      submitBtn.disabled = true;
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+        const data = await response.json();
+
+        if (data.success) {
+          steps[3].classList.add('hidden');
+          document.getElementById('summary-age').innerText = selectedAge;
+          steps.success.classList.remove('hidden');
+        } else {
+          alert("Fehler beim Senden. Bitte versuche es direkt per E-Mail an info@karateprofi.at");
+          submitBtn.innerText = "Probetraining anfragen 🚀";
+          submitBtn.disabled = false;
+        }
+      } catch (error) {
+        alert("Netzwerkfehler. Bitte versuche es später noch einmal.");
+        submitBtn.innerText = "Probetraining anfragen 🚀";
+        submitBtn.disabled = false;
+      }
+    });
+  });
+</script>

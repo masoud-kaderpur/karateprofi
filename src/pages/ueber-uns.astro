@@ -1,0 +1,99 @@
+---
+// src/pages/ueber-uns.astro
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Über uns & Trainer | KARATEPROFI Wien-Favoriten">
+
+  <Header />
+
+  <main class="overflow-hidden py-12 sm:py-20 px-4 sm:px-6 max-w-4xl mx-auto">
+
+    <!-- SEITEN-TITEL -->
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="inline-block bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4">
+        Hintergrund & Philosophie
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+        Über uns & Unsere Werte
+      </h1>
+      <p class="text-slate-600 text-base sm:text-lg">
+        Wir repräsentieren das offizielle Karate in Österreich und Wien – mit Herz, Pädagogik und fachlicher Kompetenz.
+      </p>
+    </div>
+
+    <!-- DER VEREIN (ASC UNI WIEN) -->
+    <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xs mb-12">
+      <h2 class="text-xl font-bold text-slate-900 mb-4">Der Akademische Sportklub (ASC) der Universität Wien</h2>
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+        Der Zweigverein <strong>KARATEPROFI</strong> ist Teil des gemeinnützigen Dachvereins „Akademischer Sportclub der Universität Wien“. Unser Ziel ist es, sowohl Kindern als auch Erwachsenen durch professionell geleitete Trainings die echte Freude an der Bewegung und am Kampfsport näherzubringen.
+      </p>
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+        Mitten in Wien-Favoriten bieten wir einen geschützten, sicheren Rahmen, in dem sportliche Leistung und soziale Werte Hand in Hand gehen.
+      </p>
+    </div>
+
+    <!-- TRAINER SEKTION -->
+    <div class="bg-sky-50/60 border border-sky-100 rounded-3xl p-8 sm:p-10 mb-12">
+      <h2 class="text-xl font-bold text-slate-900 mb-6">Unsere Trainer</h2>
+
+      <div class="space-y-8">
+        <!-- Trainer 1 -->
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <div class="w-20 h-20 rounded-2xl bg-sky-200 flex-shrink-0 flex items-center justify-center text-sky-800 font-bold text-xl shadow-inner">
+            CS
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900">Dr. Christian Schättle</h3>
+            <p class="text-xs text-sky-700 font-semibold mb-2">Obmann & Trainer</p>
+            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+              Staatlich geprüfter Trainer für Karate, akademischer Hort- und Freizeitpädagoge, 4. Dan Shotokan und 2. Dan Goyu Ryu. Durch seine pädagogische Ausbildung gelingt es ihm perfekt, Kinder altersgerecht zu motivieren und zu fördern.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-sky-200/60 pt-6"></div>
+
+        <!-- Trainer 2 -->
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <div class="w-20 h-20 rounded-2xl bg-sky-200 flex-shrink-0 flex items-center justify-center text-sky-800 font-bold text-xl shadow-inner">
+            KG
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900">Mag. Kurt Grabenwöger</h3>
+            <p class="text-xs text-sky-700 font-semibold mb-2">Obmannstellvertreter & Trainer</p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              1. Dan Shotokan und staatlich geprüfter Lehrwart. Unterstützt das Trainerteam mit langjähriger Erfahrung und Fachkompetenz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- UNSERE PHILOSOPHIE / WERTE -->
+    <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xs">
+      <h2 class="text-xl font-bold text-slate-900 mb-6">Sicherheit und Werte im Training</h2>
+
+      <ul class="space-y-4 text-slate-600 text-sm sm:text-base">
+        <li class="flex items-start gap-3">
+          <span class="text-sky-600 font-bold">✓</span>
+          <div><strong>Selbstvertrauen:</strong> Wir fördern Kinder alterspezifisch, damit sie gestärkt den Aufgaben des Alltags begegnen.</div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-sky-600 font-bold">✓</span>
+          <div><strong>Vertrauen & Teamgeist:</strong> Durch gemeinsame Aufgaben lernen die Kinder, sich aufeinander zu verlassen und als Team zusammenzuarbeiten.</div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-sky-600 font-bold">✓</span>
+          <div><strong>Respekt:</strong> Ein höflicher und respektvoller Umgang miteinander steht bei jeder Übung an oberster Stelle.</div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-sky-600 font-bold">✓</span>
+          <div><strong>Wachsamkeit:</strong> Die Kinder lernen Aufmerksamkeit zu entwickeln, um Gefahrensituationen im Alltag frühzeitig zu erkennen und richtig zu handeln.</div>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+</Layout>
