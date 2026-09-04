@@ -2,7 +2,7 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-white py-10 px-4 sm:px-6 mt-16 text-center">
+<footer class="bg-white border-t border-slate-100 py-10 px-4 sm:px-6 mt-16 text-center">
   <div class="max-w-6xl mx-auto flex flex-col items-center justify-center gap-4">
 
     <div>
@@ -10,9 +10,13 @@ const currentYear = new Date().getFullYear();
       <p class="text-xs text-slate-500 mt-1">Karate mit Herz, Haltung und Tradition in Wien-Favoriten.</p>
     </div>
 
-    <div>
+    <div class="flex items-center gap-3">
       <a href="/impressum" class="text-sm font-medium text-slate-600 hover:text-sky-600 transition-colors">
         Impressum
+      </a>
+      <span class="text-slate-300">•</span>
+      <a href="/datenschutz" class="text-sm font-medium text-slate-600 hover:text-sky-600 transition-colors">
+        Datenschutzerklärung
       </a>
     </div>
 
