@@ -29,22 +29,43 @@ import Probetraining from "../components/Probetraining.astro";
       </div>
     </section>
 
-    <section class="py-16 px-4 sm:px-6 bg-white border-t border-slate-100">
-      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
-        <div>
-          <h3 class="font-bold text-slate-900 text-lg mb-2">Fokus & Konzentration</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Kinder lernen spielerisch, ihre Aufmerksamkeit für den Schulalltag zu bündeln.</p>
-        </div>
-        <div>
-          <h3 class="font-bold text-slate-900 text-lg mb-2">Pädagogisch geleitet</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Geleitet von Dr. Christian Schättle (Hort- & Freizeitpädagoge & staatlicher Trainer).</p>
-        </div>
-        <div>
-          <h3 class="font-bold text-slate-900 text-lg mb-2">Werte statt Rauferei</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">Respekt, Fairness und Teamgeist stehen bei jedem Training an erster Stelle.</p>
+    <section class="py-16 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto overflow-hidden relative py-2">
+        <div class="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+        <div id="usp-ticker" class="flex gap-6 w-max">
+          <div class="w-[300px] sm:w-[350px] flex-shrink-0 bg-white border border-slate-100 p-6 rounded-2xl shadow-sm text-center md:text-left">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Fokus & Konzentration</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Kinder lernen spielerisch, ihre Aufmerksamkeit für den Schulalltag zu bündeln.</p>
+          </div>
+
+          <div class="w-[300px] sm:w-[350px] flex-shrink-0 bg-white border border-slate-100 p-6 rounded-2xl shadow-sm text-center md:text-left">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Pädagogisch geleitet</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Geleitet von Dr. Christian Schättle (Hort- & Freizeitpädagoge & staatlicher Trainer).</p>
+          </div>
+
+          <div class="w-[300px] sm:w-[350px] flex-shrink-0 bg-white border border-slate-100 p-6 rounded-2xl shadow-sm text-center md:text-left">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Werte statt Rauferei</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Respekt, Fairness und Teamgeist stehen bei jedem Training an erster Stelle.</p>
+          </div>
+
+          <div class="w-[300px] sm:w-[350px] flex-shrink-0 bg-white border border-slate-100 p-6 rounded-2xl shadow-sm text-center md:text-left">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Für jede Altersstufe</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Vom Kinder ab 3 Jahren über Jugendliche bis hin zu Erwachsenen und Senioren.</p>
+          </div>
+
+          <div class="w-[300px] sm:w-[350px] flex-shrink-0 bg-white border border-slate-100 p-6 rounded-2xl shadow-sm text-center md:text-left">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Starke Gemeinschaft</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Als Zweigverein des ASC der Universität Wien vereinen wir Tradition und Sport.</p>
+          </div>
+
+          <div class="w-[300px] sm:w-[350px] flex-shrink-0 bg-white border border-slate-100 p-6 rounded-2xl shadow-sm text-center md:text-left">
+            <h3 class="font-bold text-slate-900 text-lg mb-2">Körper & Geist</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">Verbesserung von Koordination, Beweglichkeit und innerer Ausgeglichenheit.</p>
+          </div>
         </div>
       </div>
-
       <div class="text-center mt-12">
         <a href="/ueber-uns" class="text-sky-600 hover:text-sky-700 font-semibold text-sm">
           Mehr über unsere Philosophie und Trainer erfahren →
@@ -56,3 +77,24 @@ import Probetraining from "../components/Probetraining.astro";
 
   </main>
 </Layout>
+
+<style>
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  #usp-ticker {
+    display: flex;
+    width: max-content;
+    animation: ticker 30s linear infinite;
+  }
+
+  #usp-ticker:hover {
+    animation-play-state: paused;
+  }
+</style>
