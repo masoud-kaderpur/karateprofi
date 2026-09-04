@@ -1,16 +1,14 @@
 ---
-// src/pages/kurse.astro
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 ---
 
-<Layout title="Kurse & Trainingszeiten | KARATEPROFI Wien-Favoriten">
+<Layout title="Kurse und Trainingszeiten">
 
   <Header />
 
   <main class="overflow-hidden py-12 sm:py-20 px-4 sm:px-6 max-w-5xl mx-auto">
 
-    <!-- SEITEN-TITEL -->
     <div class="text-center max-w-2xl mx-auto mb-16">
       <span class="inline-block bg-sky-100 text-sky-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider mb-4">
         Trainingsplan & Altersgruppen
@@ -19,80 +17,74 @@ import Header from '../components/Header.astro';
         Unsere Kurse im Überblick
       </h1>
       <p class="text-slate-600 text-base sm:text-lg">
-        Alters- und leistungsgerechtes Karate für Kinder ab 3 Jahren, Jugendliche und Erwachsene in Wien-Favoriten.
+        Alters- und leistungsgerechtes Karate für Kinder ab 3 Jahren, Jugendliche, Erwachsene und Senioren in Wien-Favoriten.
       </p>
     </div>
 
-    <!-- DIE 4 HAUPTKURSE -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
 
-      <!-- Kurs 1 -->
       <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between">
         <div>
-          <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Kindergarten</span>
-          <h3 class="font-bold text-slate-900 text-xl mt-1 mb-2">3 bis 6 Jahre (Bonsai-Karate)</h3>
+          <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Little Tigers</span>
+          <h3 class="font-bold text-slate-900 text-xl mt-1 mb-2">3 bis 6 Jahre</h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Spielerische Schulung von Motorik, Koordination und dem ersten Gefühl für Bewegung in einer Gruppe.
           </p>
         </div>
         <div class="bg-sky-50/60 border border-sky-100 p-4 rounded-2xl flex items-center justify-between text-sm">
-          <span class="font-semibold text-slate-700">⏱️ Dienstag, 17:15 Uhr</span>
-          <span class="text-xs font-medium text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">PAHO Halle</span>
+          <span class="font-semibold text-slate-700">Montag/Mittwoch - 17:15 Uhr</span>
+          <span class="text-xs font-medium text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">Wendstattgasse 3</span>
         </div>
       </div>
 
-      <!-- Kurs 2 -->
       <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between">
         <div>
-          <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Volksschule</span>
+          <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Smart Wolves</span>
           <h3 class="font-bold text-slate-900 text-xl mt-1 mb-2">6 bis 10 Jahre</h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Erlernen der ersten Grundtechniken, Stärkung des Selbstvertrauens und Förderung von Respekt.
           </p>
         </div>
         <div class="bg-sky-50/60 border border-sky-100 p-4 rounded-2xl flex items-center justify-between text-sm">
-          <span class="font-semibold text-slate-700">⏱️ Dienstag, 18:10 Uhr</span>
-          <span class="text-xs font-medium text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">PAHO Halle</span>
+          <span class="font-semibold text-slate-700">Montag/Mittwoch - 18:10 Uhr</span>
+          <span class="text-xs font-medium text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">Wendstattgasse 3</span>
         </div>
       </div>
 
-      <!-- Kurs 3 -->
       <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between">
         <div>
-          <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Mittelschule</span>
+          <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Smart Wolves</span>
           <h3 class="font-bold text-slate-900 text-xl mt-1 mb-2">10 bis 14 Jahre</h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
             Jugendtraining für Körperbeherrschung, Ausdauer, Disziplin und gegenseitigen Rückhalt.
           </p>
         </div>
         <div class="bg-sky-50/60 border border-sky-100 p-4 rounded-2xl flex items-center justify-between text-sm">
-          <span class="font-semibold text-slate-700">⏱️ Dienstag, 18:10 Uhr</span>
-          <span class="text-xs font-medium text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">PAHO Halle</span>
+          <span class="font-semibold text-slate-700">Montag/Mittwoch - 18:10 Uhr</span>
+          <span class="text-xs font-medium text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">Wendstattgasse 3</span>
         </div>
       </div>
 
-      <!-- Kurs 4 -->
       <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between">
         <div>
           <span class="text-xs font-bold text-sky-600 uppercase tracking-wider">Jugend & Erwachsene</span>
-          <h3 class="font-bold text-slate-900 text-xl mt-1 mb-2">Ab 14 Jahren & USI</h3>
+          <h3 class="font-bold text-slate-900 text-xl mt-1 mb-2">Ab 14 Jahren</h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Breitensport, Fitness und fortgeschrittenes Training in Kooperation mit dem USI Wien.
+            Breitensport, Fitness und fortgeschrittenes Training.
           </p>
         </div>
         <div class="bg-sky-50/60 border border-sky-100 p-4 rounded-2xl flex items-center justify-between text-sm">
-          <span class="font-semibold text-slate-700">⏱️ Dienstag, 19:00 Uhr</span>
-          <span class="text-xs font-medium text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">PAHO Halle</span>
+          <span class="font-semibold text-slate-700">Montag/Mittwoch - 19:00 Uhr</span>
+          <span class="text-xs font-medium text-sky-700 bg-sky-100 px-2.5 py-1 rounded-lg">Wendstattgasse 3</span>
         </div>
       </div>
 
     </div>
 
-    <!-- STANDORT & HINWEISE -->
     <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 text-center max-w-3xl mx-auto">
-      <h3 class="font-bold text-slate-900 text-lg mb-2">📍 Trainingsort & Details</h3>
+      <h3 class="font-bold text-slate-900 text-lg mb-2">Trainingsort & Details</h3>
       <p class="text-slate-600 text-sm leading-relaxed mb-4">
-        <strong>PAHO Halle</strong>, Jura-Soyfer-Gasse 3, 1100 Wien.<br>
+        Wendstattgasse 3, 1100 Wien<br>
         Hervorragend erreichbar – nur wenige Schritte von der U1-Station Neulaa entfernt.
       </p>
       <p class="text-xs text-slate-500">
